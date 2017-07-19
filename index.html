@@ -245,14 +245,14 @@
 </div>
 <!--Termina Servicios-->
 
-
+<!--Inicia Contactos-->
 <div class="container">
   <h2 class="center cyan-text">CONTACTO</h2>
   <div class="row">
     <div class="col s12 m3">
       <div class="card">
         <div class="card-content">
-          <img src="img/direccion.png" class="center responsive-img" alt="">
+          <img src="img/direccion1.png" class="center responsive-img" alt="">
           <span class="card-title center">Dirección</span>
           <p class="center ">
             Pedro Santacilia No. 258 Int.1
@@ -266,7 +266,7 @@
       <div class="col s12 m3">
         <div class="card">
           <div class="card-content">
-            <img src="img/direccion.png" class="center responsive-img" alt="">
+            <img src="img/contacto.png" class="center responsive-img" alt="">
             <span class="card-title center">Contacto</span>
             <p class="center">
               Teléfonos: 01 800 087 1097
@@ -281,19 +281,40 @@
       <div class="col s12 m3">
         <div class="card">
           <div class="card-content">
-            <img src="img/direccion.png" class="center responsive-img" alt="">
+            <img src="img/atencion.png" class="center responsive-img" alt="">
             <span class="card-title center">Atención</span>
             <p class="center">
               El horario de atención es de 9:00 a 19:00 hrs.
-               O bien, envíanos un mensaje, responderemos
-               a la brevedad. Muchas gracias.
+              O bien, envíanos un mensaje, responderemos
+              a la brevedad. Muchas gracias.
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-content">
+            <img src="img/localisacion.png" class="center responsive-img" alt="">
+            <span class="card-title center">Ubicación</span>
+            <a href="#modal" class="btn-floating btn-large waves-effect waves-light cyan darken-3 right z-depth-4"><i class="material-icons">wallpaper</i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  <!--termina contactos-->
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h4>Ubicación</h4><a href="#!" class="modal-action modal-close waves-effect waves-green btn-floating right cyan darken-3"><i class="material-icons">clear</i></a>
+      <p>Pedro Santacilia No. 258 Int.1
+      Colonia Iztaccihuatl
+      Distrito Federal
+      C.P. 03520 Cd. de México</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.5305117237954!2d-99.13836108584843!3d19.38947114708447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fef9b69eb459%3A0xf97fac0b83134d1a!2sPedro+Santacilia+258%2C+Iztaccihuatl%2C+03520+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1500445958700"
+      width="700" height="300" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
 
 
 
@@ -338,6 +359,7 @@
           indicators: false,
           height: 500
         });
+        $('.modal').modal();
       })
     </script>
   </body>
