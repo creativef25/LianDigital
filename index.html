@@ -141,6 +141,11 @@
 </div>
 <!--Termina Redes Sociales-->
 
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="img/parallax1.jpeg" alt="">
+  </div>
+</div>
 
 <!--Inicia Servicios-->
   <div class="container">
@@ -245,6 +250,12 @@
 </div>
 <!--Termina Servicios-->
 
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="img/parallax2.jpeg" alt="">
+  </div>
+</div>
+
 <!--Inicia Contactos-->
 <div class="container">
   <h2 class="center cyan-text">CONTACTO</h2>
@@ -269,11 +280,11 @@
             <img src="img/contacto.png" class="center responsive-img" alt="">
             <span class="card-title center">Contacto</span>
             <p class="center">
-              Teléfonos: 01 800 087 1097
-              +52 (55) 5579 2273,
-              +52 (55) 5698 9651,
-              +52 (55) 5235 5159
-              rs@dscorp.com.mx
+              Teléfonos: 01 800 087 1097<br>
+              +52 (55) 5579 2273,<br>
+              +52 (55) 5698 9651,<br>
+              +52 (55) 5235 5159 <br>
+              rs@liandigital.com
             </p>
           </div>
         </div>
@@ -316,9 +327,32 @@
     </div>
   </div>
 
-  <div class="container">
-    <h3>formulario</h3>
 
+
+  <div class="container">
+    <form action="otra/send.php" method="post">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s4">
+            <input type="text" class="validate" id="nombre">
+            <label for="nombre">Nombre</label>
+          </div>
+          <div class="input-field col s4">
+            <input type="email" id="correo" class="validate">
+            <label for="correo" data-error="Error" data-sucess="Correcto">Correo</label>
+          </div>
+          <div class="input-field col s4">
+            <input type="text" class="validate" id="asunto">
+            <label for="asunto">Asunto</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea id="textarea" class="materialize-textarea"></textarea>
+            <label for="textarea">Mensaje</label>
+          </div>
+          <input type="submit" name="submit" value="ENVIAR" class="btn cyan">
+        </div>
+      </div>
+    </form>
   </div>
 
 
@@ -365,6 +399,7 @@
           height: 500
         });
         $('.modal').modal();
+        $('.parallax').parallax();
       })
     </script>
   </body>
