@@ -1,13 +1,14 @@
 <?php
 
-$para = 'creativef25@gmail.com';
+date_default_timezone_set('America/Mexico_City');
+
+$para = 'israel_4991@hotmail.com';
 $titulo = $_POST['asunto'];
-$mensaje = $_POST['textarea'];
+$mensaje = wordwrap($_POST['textarea'],70,"\r\n");
 $cabecera = 'From:'.$_POST['correo'];
 
-ini_set("SMTP","localhost");
-ini_set("smtp_port","25");
-
 mail($para, $titulo, $mensaje, $cabecera);
+
+header("Location: ../index.html");
 
 ?>
