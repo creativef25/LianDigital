@@ -41,6 +41,7 @@
   }
   /*termina formulario input-mail*/
 
+/*inicia textarea*/
   .input-field textarea[class=materialize-textarea]:focus + label{
     color: #088;
   }
@@ -48,4 +49,25 @@
   .input-field textarea[class=materialize-textarea]:focus{
     border-bottom: 1px solid #088;
     box-shadow: 0 1px 0 0 #088;
+  }
+  /*finaliza textarea+*/
+
+  .parallax-container{
+    height: 300px;
+  }
+
+  .waves-effect.waves-cyan1 .waves-ripple{
+    background-color: rgba(0, 188, 212, 0.5);
+  }
+
+  #s1,#s2,#s3,#s4,#s5{
+    font-weight: bolder;
+  }
+
+  #l1,#l2,#l3{
+    font-weight: 500;
+  }
+
+  #s4,#s5{
+    background: rgba(0, 0, 0, 0.42);
   }

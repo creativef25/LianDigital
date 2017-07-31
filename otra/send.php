@@ -2,7 +2,7 @@
 
 date_default_timezone_set('America/Mexico_City');
 
-$para = 'israel_4991@hotmail.com';
+$para = 'creativef25@gmail.com';
 $titulo = $_POST['asunto'];
 $mensaje = wordwrap($_POST['textarea'],70,"\r\n");
 $cabecera = 'From:'.$_POST['correo'];
